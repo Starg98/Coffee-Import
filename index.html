@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coffee Shop</title>
+    <!-- Main Css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fontawesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/4d2ce197fb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Mobile Nav Start -->
+    <div class="mobile-nav">
+      <div id="mobileLinks">
+        <a href="#">Shop</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- Hamburger icon to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Mobile Nav End -->
+    <!-- Header Start -->
+    <section class="header">
+      <div id="logo">
+        <a href="index.html"><img src="/Images/logo2.png" alt="Logo"/></a>
+      </div>
+      <div class="desktop-nav">
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="myaccount-and-cart">
+        <a href="#">My Account</a>
+        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+      </div>
+    </section>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <section class="main">
+      <div class="main-img">
+        <img src="/Images/coffee-beans.jpg" alt="" />
+
+        <div class="main-img-text">
+          <h1>Buy 5 Strains of<br />Coffee Beans for <br />15% Discount</h1>
+        </div>
+        <a href="#" class="mainImgButton">Choose your coffee</a>
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="#"
+            ><img src="/Images/beans.png" alt="Beans" style="width:100%"
+          /></a>
+        </div>
+        <div class="column">
+          <a href="#"
+            ><img src="/Images/wares.png" alt="Wares" style="width:100%"
+          /></a>
+        </div>
+        <div class="column">
+          <a href="#"
+            ><img src="/Images/cups.png" alt="Cups" style="width:100%"
+          /></a>
+        </div>
+      </div>
+      <div class="featured-products">
+        <h1>Featured Products</h1>
+      </div>
+
+      <div class="who-are-we">
+        <div class="we-image">
+          <img src="/Images/man.png" alt="" />
+        </div>
+        <div class="we-text">
+          <h2>Who We Are</h2>
+          <p>
+            A look at coffee varieties and cultivars where they came from, what
+            they taste like and why we grow them.
+          </p>
+          <a href="#" class="wetextButton">About us</a>
+        </div>
+      </div>
+      <div class="newsletter">
+        <div class="newsletter-text">
+          <i class="fas fa-mug-hot"></i>
+          <h2>
+            Sign up and get 10% off your<br />
+            first purchase
+          </h2>
+          <p>Be up on the latest news and hot offers by subscribing</p>
+        </div>
+        <form action="action_page.php">
+          <div class="newsletter-container" style="background-color:white">
+            <input
+              type="text"
+              placeholder="Type your email"
+              name="mail"
+              required
+            />
+          </div>
+
+          <div class="newsletter-container">
+            <input type="submit" value="Subscribe" />
+          </div>
+        </form>
+      </div>
+      <div class="social">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="blocks-left">
+            <div class="categories">
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="#">Beans</a></li>
+                <li><a href="#">Wares</a></li>
+                <li><a href="#">Cups</a></li>
+                <li><a href="#">Merch</a></li>
+              </ul>
+            </div>
+            <div class="company">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="account">
+              <h3>Account</h3>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+            </div>
+          </div>
+          <br />
+        </div>
+        <div class="footer-right">
+          <h2>+1 800 456 87 91</h2>
+          <br />
+          <p>customerservice@mail.com</p>
+          <br />
+          <p>
+            Monday — Friday 7:00am — 5:00pm<br />
+            Saturday 8:00am — 5:00pm<br />
+            Closed Sunday<br /><br />
+            130 Kings Highway E Haddonfield, NJ 08033
+          </p>
+        </div>
+      </div>
+      <p class="copyright">&copy; Coffee Shop <br /></p>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
