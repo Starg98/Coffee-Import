@@ -2,6 +2,8 @@
 
 :root {
   --dark-brown: #611600;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
 }
 
 * {
@@ -183,6 +185,49 @@
 
 .seperator {
   border: 0.5px gray solid;
+}
+
+/* IMPORTS */
+.offerings-title {
+  font-family: "Exo", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--dark-brown);
+}
+
+.container-offerings {
+  margin: 50px auto;
+}
+
+.offerings-image {
+  position: relative;
+  margin: 100px auto;
+  width: 100%;
+  max-width: 895px;
+}
+
+.offerings-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.offerings-image h5 {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  width: 100%;
+}
+
+h5 span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  font-size: 7rem;
+  font-family: "Acme", sans-serif;
 }
 
 /* ABOUT */
@@ -436,11 +481,68 @@ textarea {
   max-width: 370px;
 }
 
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .featured-products h1 {
   font-size: 3rem;
   font-family: "Acme", sans-serif;
   text-align: center;
   color: var(--dark-brown);
+}
+
+.featured-products {
+  padding: 4rem 0;
+}
+
+.products-center {
+  margin: auto;
+  max-width: 1450px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.bag-btn {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  background: var(--dark-brown);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: var(--mainSpacing);
+  font-family: "Exo", sans-serif;
+  transition: var(--mainTransition);
+  transform: translateX(101%);
+  cursor: pointer;
+}
+
+.img-container:hover .product-img {
+  opacity: 0.8;
+}
+
+.img-container:hover .bag-btn {
+  transform: translateX(0);
+}
+
+.product h3 {
+  font-family: "Exo", sans-serif;
+  font-size: 1.1rem;
+  margin: auto;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+
+.product h4 {
+  margin-top: 0.7rem;
+  letter-spacing: var(--mainSpacing);
+  color: var(--primaryColor);
+  text-align: center;
 }
 
 /* WHO ARE WE */
@@ -449,7 +551,7 @@ textarea {
   display: flex;
   max-width: 1250px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -504,10 +606,6 @@ textarea {
 .wetextButton:hover {
   background: linear-gradient(to bottom, #871700 5%, #94280a 100%);
   background-color: #871700;
-}
-.wetextButton:active {
-  position: relative;
-  top: 1px;
 }
 
 /* EMAIL NEWSLETTER */
@@ -881,6 +979,10 @@ input[type="submit"]:hover {
   .contact-container h4 {
     font-size: 1rem;
   }
+
+  h5 span {
+    font-size: 5rem;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -945,5 +1047,13 @@ input[type="submit"]:hover {
   .accordion .content p {
     font-size: 0.9rem;
     max-width: 320px;
+  }
+
+  h5 span {
+    font-size: 3rem;
+  }
+
+  .offerings-image h5 {
+    top: 100px;
   }
 }
