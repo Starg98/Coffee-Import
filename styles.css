@@ -178,10 +178,6 @@
   background: linear-gradient(to bottom, #871700 5%, #94280a 100%);
   background-color: #871700;
 }
-.mainImgButton:active {
-  position: relative;
-  top: 1px;
-}
 
 .seperator {
   border: 0.5px gray solid;
